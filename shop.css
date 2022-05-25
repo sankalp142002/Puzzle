@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: black;
+}
+
+h4 {
+    font-size: 20px;
+    font-size: 12px;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: black;
+
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+    padding: 15px 60px;
+    background: #EAE7DC;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+    height: 9rem;
+    width: 9rem;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: f;
+    border: 1px solid rgb(130, 130, 130);
+    border-radius: 2px;
+    height: 2.2rem;
+    width: 18rem;
+    background: #EAE7DC;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navlinks li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navlinks li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #E98094;
+    transition: 0.1s ease-in-out;
+}
+
+#navlinks li a:hover {
+    color: #E85A4F;
+
+}
+
+#navlinks li a:hover,
+#navlinks li a.active {
+    color: #E85A4F;
+}
+
+#navlinks li a.active::after,
+#navlinks li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #E85A4F;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+
+#add-1 {
+    width: 100%;
+    height: 40rem;
+    background: url("images/Add/1.webp");
+    animation: slider 26s infinite ease-in;
+}
+
+@keyframes slider {
+    0% {
+        background: url("images/Add/1.webp");
+    }
+
+    16% {
+        background: url("images/Add/2.webp");
+    }
+
+    32% {
+        background: url("images/Add/3.webp");
+    }
+
+    48% {
+        background: url("images/Add/4.webp");
+    }
+
+    64% {
+        background: url("images/Add/5.webp");
+    }
+
+    80% {
+        background: url("images/Add/6.webp");
+    }
+}
+
+.hedding {
+    margin-top: 2.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 2s ease;
+}
+
+.product {
+    width: 30%;
+    margin-top: 2rem;
+    min-width: 250px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
+    transition: 2s ease;
+    position: relative;
+}
+
+.product:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.product img {
+    width: 100%;
+}
+
+.dec {
+    text-align: start;
+    padding: 10px 0;
+}
+
+.dec span {
+    font-size: 12px;
+}
+
+.dec h5 {
+    padding-top: 7px;
+    font-size: 14px;
+}
+
+.dec i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+.dec h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.cart {
+    position: absolute;
+    bottom: 20px;
+    right: 12px;
+}
+
+#latestcoll {
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+footer {
+    margin-top: 3rem;
+    background: url("images/fotter/f5.jpg");
+    backdrop-filter: blur(5px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3rem 60px;
+    height: 32rem;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1110px) {
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        cursor: pointer;
+        color: #E98094;
+        font-size: 16px;
+        font-weight: 600;
+        padding-left: 20px;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    #navlinks {
+        background: #EAE7DC;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 25rem;
+        width: 17rem;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.4s ease-in-out;
+    }
+
+    #navlinks.active {
+        right: 0px;
+    }
+
+    #navlinks li {
+        margin-bottom: 25px;
+    }
+
+    #add-1 {
+        width: 100%;
+        height: 20rem;
+        background: url("images/Add/1.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: slider 26s infinite ease-in;
+    }
+
+    @keyframes slider {
+        0% {
+            background: url("images/Add/1.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        16% {
+            background: url("images/Add/2.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        32% {
+            background: url("images/Add/3.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        48% {
+            background: url("images/Add/4.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        64% {
+            background: url("images/Add/5.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        80% {
+            background: url("images/Add/6.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    #header{
+        height: 4rem;
+    }
+    .logo {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        cursor: pointer;
+        color: #E98094;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    #lg-bag{
+        display: none;
+    }
+} 
+
+#pagination{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #E85A4F;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #EAE7DC;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#prodetails {
+    display: flex;
+    margin: 3rem;
+}
+
+#prodetails .single-pro-images{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.samll-img-sol{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-det{
+    width: 50%;
+    padding-top: 30px;   
+}
+
+#prodetails .single-pro-det h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-det h2{
+    font-size: 26px;
+}
+
+#prodetails .single-pro-det select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-det input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-det input:focus,
+#prodetails .single-pro-det select:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-det button{
+
+}
+
+#prodetails .single-pro-det span{
+    line-height: 25px;
+}
