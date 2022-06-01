@@ -43,7 +43,10 @@ p {
     justify-content: space-between;
     height: 8rem;
     padding: 15px 60px;
-    background: #EAE7DC;
+    background: url('BG-min.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 

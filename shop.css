@@ -43,7 +43,10 @@ p {
     justify-content: space-between;
     height: 8rem;
     padding: 15px 60px;
-    background: #EAE7DC;
+    background: url('BG-min.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
@@ -564,4 +567,116 @@ footer a {
     font-size: 16px;
     font-weight: 600;
     color: black;
+}
+
+#cart{
+    margin: 4rem;
+}
+
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img{
+    width: 60px;
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead{
+    border: 1px solid rgb(205, 205, 205);
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+}
+
+#cart table tbody td{
+    font-size: 13px;
+}
+
+#cart-add{
+    margin: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3,
+#subTotal h3{
+    padding-bottom: 15px;
+}
+
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid rgb(200, 200, 197);
+}
+
+#coupon button{
+
+}
+
+#subTotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid rgb(197, 197, 197);
+    padding: 30px;
+}
+
+#subTotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subTotal table td{
+    width: 50%;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 10px;
+    font-size: 13px;
 }
