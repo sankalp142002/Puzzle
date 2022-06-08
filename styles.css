@@ -1,8 +1,15 @@
-* {
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Roboto:wght@300&family=Satisfy&display=swap');
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: #F4F4F4;
+    font-family: 'Roboto', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -41,13 +48,17 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 8rem;
+    height: 7rem;
     padding: 15px 60px;
     background: url('BG-min.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .logo {
@@ -59,11 +70,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: f;
-    border: 1px solid rgb(130, 130, 130);
+    border: .5px solid rgb(130, 130, 130);
     border-radius: 2px;
     height: 2.2rem;
     width: 18rem;
-    background: #EAE7DC;
+    background: transparent;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
@@ -83,18 +94,19 @@ p {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: #E98094;
+    color: #76323F;
     transition: 0.1s ease-in-out;
+    font-family: 'Roboto', sans-serif;
 }
 
 #navlinks li a:hover {
-    color: #E85A4F;
+    color: #a84759;
 
 }
 
 #navlinks li a:hover,
 #navlinks li a.active {
-    color: #E85A4F;
+    color: #a84759;
 }
 
 #navlinks li a.active::after,
@@ -102,7 +114,7 @@ p {
     content: "";
     width: 30%;
     height: 2px;
-    background: #E85A4F;
+    background: #a84759;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -120,6 +132,7 @@ p {
 #add-1 {
     width: 100%;
     height: 40rem;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
     background: url("images/Add/1.webp");
     animation: slider 26s infinite ease-in;
 }
@@ -161,18 +174,31 @@ p {
     transition: 2s ease;
 }
 
+.hedding h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 70px;
+    margin-top: 1rem;
+    color: #76323F;
+}
+
+.hedding p,
+.hedding h6{
+    font-family: 'Roboto', sans-serif;
+    color: #411b22;
+}
+
 .product {
     width: 30%;
     margin-top: 2rem;
     min-width: 250px;
     cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
-    transition: 2s ease;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+    transition: 1s ease;
     position: relative;
 }
 
 .product:hover {
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.15);
 }
 
 .product img {
@@ -181,33 +207,51 @@ p {
 
 .dec {
     text-align: start;
-    padding: 10px 0;
+    padding: 10px 10px;
 }
 
 .dec span {
-    font-size: 12px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .dec h5 {
     padding-top: 7px;
-    font-size: 14px;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
 }
 
-.dec i {
-    font-size: 12px;
+.dec i{
     color: rgb(243, 181, 25);
 }
 
+.star {
+    font-size: 12px;
+    position: absolute;
+    bottom: 4.6rem;
+    right: 12px;
+    border: 1px solid rgb(172, 172, 172);
+    padding: 2px;
+    border-radius: 6px;
+}
+
 .dec h4 {
-    padding-top: 7px;
-    font-size: 15px;
+    padding-top: .8rem;
+    font-size: 1rem;
     font-weight: 700;
+    font-family: 'Roboto', sans-serif;
 }
 
 .cart {
     position: absolute;
     bottom: 20px;
     right: 12px;
+    color: #a84759;
+    transition: 0.5s ease;
+}
+
+.cart:hover{
+    color:#76323F;
 }
 
 .colectionSec {
@@ -216,6 +260,76 @@ p {
     justify-content: space-around;
     padding-top: 20px;
     flex-wrap: wrap;
+}
+
+.showMoreButton{
+    margin: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    height: 3rem;
+    color: #EAE7DC;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    background-color: #76323F;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.showMoreButton:hover,
+.ExploreButton:hover{
+    background-color: #a84759;
+}
+
+#add-2{
+    margin-top: 2rem;
+    background: url("Hurry!!.png");
+    width: 100%;
+    height: 30rem;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.jewAd{
+    width: 100%;
+    height: 37rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: antiquewhite;
+    background-image: url(https://cdn.shopify.com/s/files/1/0284/5599/3449/files/Vector.png?v=1613560319);
+    margin-top: 2.5rem;
+}
+
+.jewSec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.jewSec img{
+    margin: 2rem;
+    width: 18rem;
+    height: 18rem;
+}
+
+.ExploreButton{
+    margin: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    height: 3rem;
+    width: 10rem;
+    color: #EAE7DC;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    background-color: #76323F;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: 0.5s ease;
 }
 
 footer {
@@ -269,7 +383,7 @@ footer a {
 
     #mobile i {
         cursor: pointer;
-        color: #E98094;
+        color: #76323F;
         font-size: 16px;
         font-weight: 600;
         padding-left: 20px;
